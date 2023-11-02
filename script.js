@@ -9,7 +9,7 @@
 // ######
 // #######
 
-/*for (var i = 1; i <= 7; i++) {
+for (var i = 1; i <= 7; i++) {
     var line = '';
     for (var j = 1; j <= i; j++) {
       line += '#';
@@ -74,7 +74,7 @@ var foods = [
 // let foods=[]
 // Find the length of your foods array.
 
-var foods = [
+var foods1 = [
   "Biriyani",
   "fried rice",
   "Chocolate",
@@ -97,8 +97,8 @@ var foods = [
   "cheese Popcorn"
 ];
 
-  console.log(foods[4]);
-  console.log(foods.length);
+  console.log(foods1[4]);
+  console.log(foods1.length);
 
 // Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
 
@@ -126,7 +126,7 @@ console.log(friends);
 
 //Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
 
-var friends = [
+var friends1 = [
   "Mari",
   "MaryJane",
   "CaptianAmerica",
@@ -144,14 +144,14 @@ function dataHandling(input) {
     console.log(input[i]);
     }  
 }
-dataHandling(friends);
-console.log(friends);
+dataHandling(friends1);
+console.log(friends1);
 
 
 // Find the person is ur friend or not.
 
 
-var friends = [
+var friends2 = [
   "Mari",
   "MaryJane",
   "CaptianAmerica",
@@ -168,71 +168,71 @@ function dataHandling(input, name) {
   }
   return false; 
 }
-var found = dataHandling(friends, "Jeff");
+var found = dataHandling(friends2, "Jeff");
 console.log(found);
 
 //  We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
 ""
-var friends1 = ["Mari" , "MaryJane" , "CaptianAmerica", "Munnabai" , "Jeff" , "AAK chandran"];
-var friends2 = ["Gabbar", "Rajinikanth", "Mass", "Spiderman", "Jeff", "ET"];
+var friends3 = ["Mari" , "MaryJane" , "CaptianAmerica", "Munnabai" , "Jeff" , "AAK chandran"];
+var friends4 = ["Gabbar", "Rajinikanth", "Mass", "Spiderman", "Jeff", "ET"];
 
 function dataHandling(input1,input2){
   var combinedFriends = input1.concat(input2);
   combinedFriends.sort();
   return combinedFriends;
 }
-var combinedAndSortedFriends = dataHandling(friends1, friends2);
+var combinedAndSortedFriends = dataHandling(friends3, friends4);
 console.log(combinedAndSortedFriends);
 
 //Get the first item, the middle item and the last item of the array
 
-var friends1 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
-var firstItem = friends1[0];
-var middleItem = friends1[Math.floor(friends1.length / 2)];
-var lastItem = friends1[friends1.length - 1];
+var friends5 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var firstItem = friends5[0];
+var middleItem = friends5[Math.floor(friends5.length / 2)];
+var lastItem = friends5[friends5.length - 1];
 console.log("First Item: " + firstItem);
 console.log("Middle Item: " + middleItem);
 console.log("Last Item: " + lastItem);
 
 //Add your name to the end of the friends array, and add another name to beginning.
 
-var friends1 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friends6 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
 var myName = "Gopikadevi"; 
-friends1.push(myName);
+friends6.push(myName);
 var anotherName = "Radhakrishnan";
-friends1.unshift(anotherName);
-console.log(friends1);
+friends6.unshift(anotherName);
+console.log(friends6);
 
 //3.Add Mr or Ms to the names in the friends array.
 
-var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friends7 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
 
-for (var i = 0; i < friends.length; i++) {
-  if (isMale(friends[i])) {
-    friends[i] = "Mr " + friends[i];
+for (var i = 0; i < friends7.length; i++) {
+  if (isMale(friends7[i])) {
+    friends7[i] = "Mr " + friends7[i];
   } else {
-    friends[i] = "Ms " + friends[i];
+    friends7[i] = "Ms " + friends7[i];
   }
 }
-console.log(friends);
+console.log(friends7);
 function isMale(name) {
   return true;
 }
 
 //Concat all the names the friends array and return as comma “,” seperated string.
 
-var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
-var concatenatedString = friends.join(", ");
+var friends8 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var concatenatedString = friends8.join(", ");
 console.log(concatenatedString);
 
 //5. Find the friends names who has letter ‘a’ and return the list.
 
-var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friends9 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
 var names = [];
 
-for (var i = 0; i < friends.length; i++) {
-  if (containsA(friends[i])) {
-    names.push(friends[i]);
+for (var i = 0; i < friends9.length; i++) {
+  if (containsA(friends9[i])) {
+    names.push(friends9[i]);
   }
 }
 console.log(names);
@@ -242,23 +242,23 @@ function containsA(name) {
 
 //6. Find the avg length of all the friends names. Get the individual length of the names and do the avg.
 
-var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friends10 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
 var totalLength = 0;
-var totalNames = friends.length;
+var totalNames = friends10.length;
 
 for (var i = 0; i < totalNames; i++) {
-  totalLength += friends[i].length;
+  totalLength += friends10[i].length;
 }
 var averageLength = totalLength / totalNames;
 console.log("Average length of friends' names: " + averageLength);
 
 //7. Find the names and return the list starting with letter M.
 
-var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friends11 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
 var namesStartingWithM = [];
-for (var i = 0; i < friends.length; i++) {
-  if (startsWithM(friends[i])) {
-    namesStartingWithM.push(friends[i]);
+for (var i = 0; i < friends11.length; i++) {
+  if (startsWithM(friends11[i])) {
+    namesStartingWithM.push(friends11[i]);
   }
 }
 console.log(namesStartingWithM);
@@ -268,11 +268,11 @@ function startsWithM(name) {
 
 //8. Find the name with max characters and return the name.
 
-var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friends12 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
 var maxName = "";
 var maxLength = 0;
-for (var i = 0; i < friends.length; i++) {
-  var currentName = friends[i];
+for (var i = 0; i < friends12.length; i++) {
+  var currentName = friends12[i];
   if (currentName.length > maxLength) {
     maxLength = currentName.length;
     maxName = currentName;
@@ -282,11 +282,11 @@ console.log("Name with the maximum characters: " + maxName);
 
 //9. Find the name with min characters and return the name.
 
-var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friends13 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
 var minName = "";
 var minLength = Infinity;
-for (var i = 0; i < friends.length; i++) {
-  var currentName = friends[i];
+for (var i = 0; i < friends13.length; i++) {
+  var currentName = friends13[i];
   if (currentName.length < minLength) {
     minLength = currentName.length;
     minName = currentName;
@@ -299,7 +299,7 @@ console.log("Name with the minimum characters: " + minName);
 // const friendsInfo = [6, 12, ‘Mari’, 1, true, ‘Munnabai’, ‘200’, ‘CaptianAmerica’, 8, 10];
 
 const friendsInfo = [6, 12, 'Mari', 1, true, 'Munnabai', '200', 'CaptianAmerica', 8, 10];
-let sum = 0;
+let sum1 = 0;
 let count1 = 0;
 for (let i = 0; i < friendsInfo.length; i++) {
   if (typeof friendsInfo[i] === 'number') {
@@ -381,7 +381,7 @@ var companies = [
     age: 32,
     location: "333 Santana Row, San Jose"
   }
-];*/
+];
 
 //Print odd numbers in an array
 
@@ -450,7 +450,6 @@ console.log("Prime numbers in the array: " + primeNumbers);
 // Return all the palindromes in an array
 
 function isPalindrome(str) {
-  // Remove non-alphanumeric characters and convert to lowercase for comparison
   str = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
   var reversedStr = str.split('').reverse().join('');
   return str === reversedStr;
